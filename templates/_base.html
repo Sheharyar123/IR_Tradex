@@ -24,6 +24,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/colors.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/dark.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
+    <![endif]-->
   </head>
 
   <body class="dark">
@@ -36,6 +39,9 @@
         {% block content %}{% endblock content %}
         {% include 'includes/footer.html' %}
         {% include 'includes/scripts.html' %}
+        <!-- CURSOR -->
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div> 
     </div>
   </body>
 </html>

@@ -1,0 +1,533 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- MODALBOX -->
+<div class="kura_tm_modalbox">
+  <div class="box_inner">
+    <div class="close">
+      <a href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="Capa_1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 511.995 511.995"
+          style="enable-background: new 0 0 511.995 511.995"
+          xml:space="preserve"
+          class="svg replaced-svg"
+        >
+          <g>
+            <g>
+              <path
+                d="M437.126,74.939c-99.826-99.826-262.307-99.826-362.133,0C26.637,123.314,0,187.617,0,256.005    s26.637,132.691,74.993,181.047c49.923,49.923,115.495,74.874,181.066,74.874s131.144-24.951,181.066-74.874    C536.951,337.226,536.951,174.784,437.126,74.939z M409.08,409.006c-84.375,84.375-221.667,84.375-306.042,0    c-40.858-40.858-63.37-95.204-63.37-153.001s22.512-112.143,63.37-153.021c84.375-84.375,221.667-84.355,306.042,0    C493.435,187.359,493.435,324.651,409.08,409.006z"
+              ></path>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M341.525,310.827l-56.151-56.071l56.151-56.071c7.735-7.735,7.735-20.29,0.02-28.046    c-7.755-7.775-20.31-7.755-28.065-0.02l-56.19,56.111l-56.19-56.111c-7.755-7.735-20.31-7.755-28.065,0.02    c-7.735,7.755-7.735,20.31,0.02,28.046l56.151,56.071l-56.151,56.071c-7.755,7.735-7.755,20.29-0.02,28.046    c3.868,3.887,8.965,5.811,14.043,5.811s10.155-1.944,14.023-5.792l56.19-56.111l56.19,56.111    c3.868,3.868,8.945,5.792,14.023,5.792c5.078,0,10.175-1.944,14.043-5.811C349.28,331.117,349.28,318.562,341.525,310.827z"
+              ></path>
+            </g>
+          </g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g></svg
+      ></a>
+    </div>
+    <div class="description_wrap"></div>
+  </div>
+</div>
+<!-- /MODALBOX -->
+<!-- HERO -->
+<div class="kura_tm_section" id="home">
+  <div class="kura_tm_hero">
+    <div class="container">
+      <div class="content">
+        <div class="left">
+          <span class="name">Why IR Tradex</span>
+          <h3 class="job">
+            Our mission is to Make a Million Millionaires,
+            <br />
+            Join us in the cause
+          </h3>
+          <a href="https://wa.me/message/KMKQUF7JTXT7E1">
+            <button type="button" class="btn btncolor">
+              <ul>
+                <div class="list_inner">
+                  <div class="title">
+                    <span
+                      ><a
+                        class="link padding_for_text"
+                        href="https://wa.me/message/KMKQUF7JTXT7E1"
+                        target="_blank"
+                        ><p>Start Auto Trading Now</p></a
+                      ></span
+                    >
+                  </div>
+                </div>
+              </ul>
+            </button>
+          </a>
+          <div class="short_info topmargine">
+            <ul>
+              <li>
+                <div class="list_inner">
+                  <h3>10+</h3>
+                  <span>Years of<br />Experience</span>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <h3>3K+</h3>
+                  <span>Happy<br />Customers</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image">
+            <img src="{% static 'img/thumbs/3-4.jpg' %}" alt="" />
+            <div
+              class="main"
+              data-img-url="{% static 'img/hero/1.jpg' %}"
+            ></div>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="down anchor">
+          <a href="#portfolio"
+            ><img
+              class="svg"
+              src="{% static 'img/svg/down-arrow.svg' %}"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /HERO -->
+
+<!-- PORTFOLIO -->
+<div class="kura_tm_section" id="portfolio">
+  <div class="kura_tm_portfolio">
+    <div class="container">
+      <div class="kura_tm_main_title">
+        <span>Our Team</span>
+        <h3>Experienced Traders</h3>
+      </div>
+      <div
+        class="portfolio_list gallery_zoom wow fadeInUp"
+        data-wow-duration=".7s"
+      >
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="{% static 'img/portfolio/410-460.jpg' %}" alt="" />
+                  <div class="main" data-img-url="{% static 'img/portfolio/1.jpg' %}"></div>
+                </div>
+                <!-- <div class="overlay"></div>
+                      <img class="svg" src="img/svg/right-arrow.svg" alt="" /> -->
+                <div class="details">
+                  <h3>Faizan Muhammad</h3>
+                  <span>Team Head</span>
+                </div>
+                <a
+                class="kura_tm_full_link zoom"
+                href="{% static 'img/portfolio/1.jpg' %}"
+              ></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="{% static 'img/portfolio/410-460.jpg' %}" alt="" />
+                  <div class="main" data-img-url="{% static 'img/portfolio/4.jpg' %}"></div>
+                </div>
+                <!-- <div class="overlay"></div>
+                      <img class="svg" src="img/svg/right-arrow.svg" alt="" /> -->
+                <div class="details">
+                  <h3>Ajmal Sipra</h3>
+                  <span>Spot Trader</span>
+                </div>
+                <a
+                  class="kura_tm_full_link zoom"
+                  href="{% static 'img/portfolio/4.jpg' %}"
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="{% static 'img/portfolio/410-460.jpg' %}" alt="" />
+                  <div class="main" data-img-url="{% static 'img/portfolio/5.jpg' %}"></div>
+                </div>
+                <!-- <div class="overlay"></div>
+                      <img class="svg" src="img/svg/right-arrow.svg" alt="" /> -->
+                <div class="details">
+                  <h3>Mamoon Iqbal</h3>
+                  <span>Strategy Analyst</span>
+                </div>
+                <a
+                  class="kura_tm_full_link zoom"
+                  href="{% static 'img/portfolio/5.jpg' %}"
+                ></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="{% static 'img/portfolio/410-460.jpg' %}" alt="" />
+                  <div class="main" data-img-url="{% static 'img/portfolio/6.jpg' %}"></div>
+                </div>
+                <!-- <div class="overlay"></div>
+                      <img class="svg" src="img/svg/right-arrow.svg" alt="" /> -->
+                <div class="details">
+                  <h3>Muhammad Ibrahim</h3>
+                  <span>Futures Trader</span>
+                </div>
+                <a
+                  class="kura_tm_full_link zoom"
+                  href="{% static 'img/portfolio/6.jpg' %}"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="kura_tm_swiper_progress fill">
+            <div class="my_pagination_in">
+              <span class="current"></span>
+              <span class="pagination_progress"
+                ><span class="all"><span></span></span
+              ></span>
+              <span class="total"></span>
+            </div>
+            <div class="my_navigation">
+              <ul>
+                <li>
+                  <a class="my_prev" href="#"
+                    ><img class="svg" src="{% static 'img/svg/right-arrow.svg' %}" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a class="my_next" href="#"
+                    ><img class="svg" src="{% static 'img/svg/right-arrow.svg' %}" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /PORTFOLIO -->
+
+<!-- SKILLS -->
+<div class="kura_tm_section" id="skills">
+  <div class="kura_tm_skills">
+    <div class="container">
+      <div class="skills_inner">
+        <div class="left">
+          <div class="kura_tm_main_title light">
+            <span>How we work</span>
+            <h3>Auto Trading</h3>
+          </div>
+          <div class="text wow fadeInUp" data-wow-duration=".7s">
+            <p>
+              At IR Tradex, we specialize in the cryptocurrency market. Our team
+              of experts have years of experience in the cryptocurrency industry
+              and are well-versed in the world of digital currencies. We offer a
+              comprehensive range of services for both individuals and
+              businesses, including trading, market analysis, and portfolio
+              management. We also offer educational materials to help our
+              clients understand the nuances of the cryptocurrency industry.
+              With our extensive knowledge and experience, we can provide our
+              clients with the guidance they need to succeed in the world of
+              cryptocurrency trading.
+            </p>
+          </div>
+          <div
+            class="dodo_progress wow fadeInUp"
+            data-wow-duration=".7s"
+            data-wow-delay=".2s"
+          >
+            <div class="progress_inner" data-value="95">
+              <span
+                ><span class="label">Average ROI</span
+                ><span class="number">95%</span></span
+              >
+              <div class="background">
+                <div class="bar"><div class="bar_in"></div></div>
+              </div>
+            </div>
+            <div class="progress_inner" data-value="80">
+              <span
+                ><span class="label">Accuracy</span
+                ><span class="number">80%</span></span
+              >
+              <div class="background">
+                <div class="bar"><div class="bar_in"></div></div>
+              </div>
+            </div>
+            <div class="progress_inner" data-value="90">
+              <span
+                ><span class="label">Customers Satisfaction</span
+                ><span class="number">93%</span></span
+              >
+              <div class="background">
+                <div class="bar"><div class="bar_in"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right" data-background-style="image">
+          <div
+            class="my_image jarallax"
+            data-speed="0"
+            data-img-url="{% static 'img/portfolio/2.png' %}"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /SKILLS -->
+
+<!-- PRICING -->
+<div class="kura_tm_section" id="price">
+  <div class="kura_tm_pricing">
+    <div class="container">
+      <div class="pricing_inner">
+        <div class="left">
+          <div class="kura_tm_sticky_section">
+            <div class="kura_tm_main_title">
+              <span>Services</span>
+              <h3>Our Services</h3>
+            </div>
+            <div class="text">
+              <p>
+                Our cryptocurrency services provide fair, transparent, and
+                competitive prices. We offer tailored services with the most
+                up-to-date technology, enabling you to stay ahead of the
+                competition. Our team of experts is available 24/7 to guide you
+                through the ever-changing landscape of cryptocurrency, so you
+                can make informed decisions and mitigate risk every step of the
+                way. With our competitive pricing model, you can trust that you
+                are getting the best value for your money. Our services provide
+                the perfect balance of affordability and quality, so you can
+                trust that you’re getting the best bang for your buck.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="kura_tm_sticky_section">
+            <ul>
+              <li class="wow fadeInUp" data-wow-duration=".7s">
+                <div class="list_inner">
+                  <div class="title">
+                    <span
+                      ><a
+                        class="link"
+                        href="https://wa.me/message/KMKQUF7JTXT7E1"
+                        target="_blank"
+                        >Auto Trading</a
+                      ></span
+                    >
+                  </div>
+                  <div class="cost">
+                    <!-- <span></span> for price -->
+                  </div>
+                  <!-- <img class="svg" src="img/svg/wordpress.svg" alt="" /> -->
+                  <!-- If you want to change or add any svg icons you can download here for free www.flaticon.com -->
+                </div>
+              </li>
+              <li
+                class="wow fadeInUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".2s"
+              >
+                <div class="list_inner">
+                  <div class="title">
+                    <span
+                      ><a
+                        class="link"
+                        href="https://wa.me/message/KMKQUF7JTXT7E1"
+                        target="_blank"
+                        >Futures & Spot Signals</a
+                      ></span
+                    >
+                  </div>
+                  <div class="cost">
+                    <!-- <span>$400</span> for price -->
+                  </div>
+                  <!-- <img class="svg" src="img/svg/html.svg" alt="" /> -->
+                </div>
+              </li>
+              <li
+                class="wow fadeInUp"
+                data-wow-duration=".7s"
+                data-wow-delay=".4s"
+              >
+                <div class="list_inner">
+                  <div class="title">
+                    <span
+                      ><a
+                        class="link"
+                        href="https://wa.me/message/KMKQUF7JTXT7E1"
+                        target="_blank"
+                        >Learn Trading</a
+                      ></span
+                    >
+                  </div>
+                  <div class="cost">
+                    <!-- <span>$300</span> -->
+                  </div>
+                  <!-- <img class="svg" src="img/svg/edit.svg" alt="" /> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /PRICING -->
+
+<!-- CONTACT -->
+<div class="kura_tm_section" id="contact">
+  <div class="kura_tm_contact">
+    <div class="container">
+      <div class="kura_tm_main_title">
+        <span>Contact</span>
+        <h3>Get in Touch</h3>
+      </div>
+      <div class="contact_inner">
+        <div class="left wow fadeInUp" data-wow-duration=".7s">
+          <div class="text">
+            <p>
+              Please fill out the form on this section to contact with us. Or
+              call between 9:00 a.m. and 8:00 p.m. Monday to Friday
+            </p>
+          </div>
+          <div class="short">
+            <ul>
+              <li>
+                <div class="list_inner">
+                  <!-- If you want to change or add any svg icons you can download here for free www.flaticon.com -->
+                  <img
+                    class="svg"
+                    src="{% static 'img/svg/placeholder.svg' %}"
+                    alt=""
+                  />
+                  <span>Victoria, Melbourne, Australia</span>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <!-- If you want to change or add any svg icons you can download here for free www.flaticon.com -->
+                  <img
+                    class="svg"
+                    src="{% static 'img/svg/placeholder.svg' %}"
+                    alt=""
+                  />
+                  <span>Sargodha, Punjab, Pakistan</span>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <img
+                    class="svg"
+                    src="{% static 'img/svg/phone.svg' %}"
+                    alt=""
+                  />
+                  <span>+44 7862 112457, +92 320 211 6666</span>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <img
+                    class="svg"
+                    src="{% static 'img/svg/mail.svg' %}"
+                    alt=""
+                  />
+                  <span>info@irtradex.com</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right wow fadeInUp" data-wow-duration=".7s">
+          <div class="fields">
+            <form
+              action="/"
+              method="post"
+              class="contact_form"
+              id="contact_form"
+              autocomplete="off"
+            >
+              <div
+                class="returnmessage"
+                data-success="Your message has been received, We will contact you soon."
+              ></div>
+              <div class="empty_notice">
+                <span>Please Fill Required Fields</span>
+              </div>
+              <div class="first">
+                <ul>
+                  <li>
+                    <input id="name" type="text" placeholder="Name" />
+                  </li>
+                  <li>
+                    <input id="email" type="text" placeholder="Email" />
+                  </li>
+                </ul>
+              </div>
+              <div class="last">
+                <textarea id="message" placeholder="Message"></textarea>
+              </div>
+              <div class="kura_tm_button" data-position="left">
+                <a id="send_message" href="mailto:mwasifgondal@gmail.com"
+                  ><span>Submit</span
+                  ><img class="svg" src="img/svg/right-arrow.svg" alt=""
+                /></a>
+              </div>
+
+              <!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /CONTACT -->
+
+<!-- AUDIO FOR CLICK -->
+<audio id="audio1"><source src="{% static 'audio/1.mp3' %}" /></audio>
+<audio id="audio2"><source src="{% static 'audio/2.mp3' %}" /></audio>
+<!-- /AUDIO FOR CLICK -->
+{% endblock content %}
