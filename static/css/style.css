@@ -1272,7 +1272,7 @@ body.opened .kura_tm_hero .down {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-image: url(..//img/patterns/white-texture.png);
+  background-image: url(/static/img/patterns/white-texture.png);
   background-repeat: repeat;
   opacity: 0.6;
   z-index: 2;
@@ -1877,7 +1877,7 @@ body.opened .kura_tm_hero .down {
   clear: both;
   float: left;
 }
-.kura_tm_button a {
+.kura_tm_button button {
   text-decoration: none;
   color: #fff;
   font-size: 17px;
@@ -1886,6 +1886,9 @@ body.opened .kura_tm_hero .down {
   padding: 8px 20px;
   position: relative;
   background-color: #ff4522;
+  width: 100%;
+  border: none;
+  cursor: pointer;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1893,7 +1896,7 @@ body.opened .kura_tm_hero .down {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.kura_tm_button a .svg {
+.kura_tm_button button .svg {
   position: relative;
   top: 2px;
   width: 17px;
@@ -1906,11 +1909,11 @@ body.opened .kura_tm_hero .down {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.kura_tm_button a:hover {
+.kura_tm_button button:hover {
   color: #fff;
   background-color: #000;
 }
-.kura_tm_button a:hover .svg {
+.kura_tm_button button:hover .svg {
   transform: rotate(-50deg);
 }
 
