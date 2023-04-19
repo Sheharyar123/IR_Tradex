@@ -110,17 +110,6 @@ function kura_tm_trigger_menu() {
 function kura_tm_down() {
   "use strict";
   var topbar = jQuery(".kura_tm_topbar").outerHeight();
-  jQuery(".kura_tm_hero .down a").on("click", function () {
-    if ($.attr(this, "href") !== "#") {
-      $("html, body").animate(
-        {
-          scrollTop: $($.attr(this, "href")).offset().top - topbar + 20,
-        },
-        800
-      );
-    }
-    return false;
-  });
 }
 
 // -----------------------------------------------------
@@ -304,25 +293,27 @@ jQuery(".dodo_progress").each(function () {
 // ---------------   PRELOADER   -----------------------
 // -----------------------------------------------------
 
-// function kura_tm_preloader(){
+function kura_tm_preloader() {
+  "use strict";
 
-// 	"use strict";
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+    navigator.userAgent
+  )
+    ? true
+    : false;
+  var preloader = $("#preloader");
 
-// 	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-// 	var preloader = $('#preloader');
-
-// 	if (!isMobile) {
-// 		setTimeout(function() {
-// 			preloader.addClass('preloaded');
-// 		}, 800);
-// 		setTimeout(function() {
-// 			preloader.remove();
-// 		}, 2000);
-
-// 	} else {
-// 		preloader.remove();
-// 	}
-// }
+  if (!isMobile) {
+    setTimeout(function () {
+      preloader.addClass("preloaded");
+    }, 800);
+    setTimeout(function () {
+      preloader.remove();
+    }, 2000);
+  } else {
+    preloader.remove();
+  }
+}
 
 // -----------------------------------------------------
 // -----------------   MY LOAD    ----------------------
@@ -575,16 +566,14 @@ function kura_tm_swiper() {
                 ((current - 1) * parseInt((100 / total) * 100)) / 100 + "px";
             }
 
-            progressDOM
-              .find(".all span")
-              .css({
-                transform:
-                  "translate3d(" +
-                  translateX +
-                  ",0px,0px) scaleX(" +
-                  scale +
-                  ") scaleY(1)",
-              });
+            progressDOM.find(".all span").css({
+              transform:
+                "translate3d(" +
+                translateX +
+                ",0px,0px) scaleX(" +
+                scale +
+                ") scaleY(1)",
+            });
             if (current < 10) {
               current = "0" + current;
             }

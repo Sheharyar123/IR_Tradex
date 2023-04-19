@@ -2396,7 +2396,8 @@ body.dark .kura_tm_settings .cursor li .svg,
 }
 
 .btn {
-  width: 40%;
+  display: inline-block;
+  padding: 4px 15px;
   border-radius: 50px;
 }
 
@@ -2544,13 +2545,13 @@ body.dark .kura_tm_settings .cursor li .svg,
     display: none;
   }
   .kura_tm_hero .content .right .image .main {
-    transform: rotate(13deg);
+    transform: rotate(0deg);
   }
   .kura_tm_hero .content .right .image {
     max-width: 100%;
   }
   body.opened .kura_tm_hero .content .right .image .main {
-    transform: rotate(13deg);
+    transform: rotate(0deg);
   }
   .kura_tm_hero .job {
     font-size: 35px;
@@ -2601,7 +2602,7 @@ body.dark .kura_tm_settings .cursor li .svg,
 }
 @media (max-width: 768px) {
   .kura_tm_hero .job {
-    font-size: 30px;
+    font-size: 25px;
   }
   .kura_tm_hero .short_info ul li h3 {
     font-size: 35px;
@@ -2681,6 +2682,23 @@ body.dark .kura_tm_settings .cursor li .svg,
     font-size: 20px;
   }
   .kura_tm_modalbox .news_popup_informations .details h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .padding_for_text {
+    padding: 0%;
+  }
+}
+
+@media (max-width: 370px) {
+  .kura_tm_hero .job {
     font-size: 20px;
   }
 }
