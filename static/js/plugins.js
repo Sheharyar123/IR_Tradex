@@ -14976,7 +14976,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     W
   );
 });
-//# sourceMappingURL=swiper.min.js.map
 
 /*!
  * Name    : Just Another Parallax [Jarallax]
@@ -16138,14 +16137,13 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
         t
       );
     })();
-  (window.VideoWorker = y)
-  /*!
-   * Name    : Video Background Extension for Jarallax
-   * Version : 1.0.0
-   * Author  : nK http://nkdev.info
-   * GitHub  : https://github.com/nk-o/jarallax
-   */,
-    (function () {
+  (window.VideoWorker = y),
+    /*!
+     * Name    : Video Background Extension for Jarallax
+     * Version : 1.0.0
+     * Author  : nK http://nkdev.info
+     * GitHub  : https://github.com/nk-o/jarallax
+     */ (function () {
       if ("undefined" != typeof jarallax) {
         var e = jarallax.constructor,
           t = e.prototype.init;
